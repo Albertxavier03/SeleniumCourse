@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Using Base Class]">
+  <test thread-count="5" name="Lead Test(failed)">
+    <classes>
+      <class name="testcase.MergeLead">
+        <methods>
+          <include name="runMergeLead"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- testcase.MergeLead -->
+    </classes>
+  </test> <!-- Lead Test(failed) -->
+</suite> <!-- Failed suite [Using Base Class] -->

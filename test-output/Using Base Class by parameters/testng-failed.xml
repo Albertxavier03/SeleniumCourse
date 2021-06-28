@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Using Base Class by parameters]">
+  <parameter name="password" value="crmsfa"/>
+  <parameter name="userName" value="DemoSalesManager"/>
+  <parameter name="url" value="http://leaftaps.com/opentaps/"/>
+  <test thread-count="5" name="Lead Test(failed)">
+    <classes>
+      <class name="week5.day2.EditLead1">
+        <methods>
+          <include name="runEditLead"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- week5.day2.EditLead1 -->
+      <class name="week5.day2.CreateLead1">
+        <methods>
+          <include name="preCondition"/>
+          <include name="runCreateLead"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- week5.day2.CreateLead1 -->
+    </classes>
+  </test> <!-- Lead Test(failed) -->
+</suite> <!-- Failed suite [Using Base Class by parameters] -->
