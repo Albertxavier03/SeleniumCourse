@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test Leaf parallel">
+	<test thread-count="2" name="Lead Test" verbose="5"
+		parallel="classes">
+		<classes>
+			<class name="testcase.CreateLead" />
+			<class name="testcase.DeleteLead" />
+			<class name="testcase.EditLead" />
+			<class name="testcase.DuplicateLead" />
+		</classes>
+	</test> <!-- Lead Test -->
+</suite> <!-- Test Leaf -->
